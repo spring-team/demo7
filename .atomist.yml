@@ -1,0 +1,48 @@
+---
+kind: "operation"
+client: "atomist-bot"
+generator:
+  name: "NewSpringBootRestService"
+  group: "atomist"
+  artifact: "spring-rugs"
+  version: "0.12.0"
+  origin:
+    repo: "https://github.com/atomist/spring-rugs.git"
+    branch: "6b9204311de6e06c390e9feddbeb413f57fa32c4"
+    sha: "6b92043"
+  parameters:
+    - "artifactId": "spring-rest-seed"
+    - "groupId": "com.atomist.springteam"
+    - "version": "0.1.0-SNAPSHOT"
+    - "description": "Seed for creating Spring REST services"
+    - "rootPackage": "com.atomist.springteam"
+    - "serviceClassName": "Seed"
+
+---
+kind: "operation"
+client: "com.atomist:rug"
+version: "1.0.0-20170518094744"
+editor:
+  name: "UpgradeVersionEditor"
+  group: "atomist"
+  artifact: "spring-team-handlers"
+  version: "0.1.123"
+  parameters:
+    - "group": "com.atomist"
+    - "artifact": "demo-lib"
+    - "desiredVersion": "0.1.1"
+
+---
+kind: "operation"
+client: "com.atomist:rug"
+version: "1.0.0-20170518094744"
+editor:
+  name: "UpgradeVersionEditor"
+  group: "atomist"
+  artifact: "spring-team-handlers"
+  version: "0.1.125"
+  parameters:
+    - "group": "com.atomist"
+    - "artifact": "demo-lib"
+    - "desiredVersion": "0.1.2"
+
