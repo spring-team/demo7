@@ -11,8 +11,4 @@ public class HomeController {
         return "Hello REST Microservice World";
     }
     
-    @RequestMapping(path = "/home2")
-    public String home2() {
-        return "Hello REST Microservice World";
-    }
 }
